@@ -1,0 +1,141 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.cointainer{
+    text-align: center;
+}
+h1{
+    background-color: #258276;
+    color: white;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+}
+@media(max-width:285px){
+    h1{
+      font-size: 20px;
+    }
+}
+@media(max-width:170px){
+    h1{
+      font-size: 15px;
+    }
+}
+@media(max-width:160px){
+    h1{
+      font-size: 8px;
+    }
+}
+/* this is a choice part thare are three opition with three image */
+.choices{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+.choice:hover{
+cursor: pointer;
+box-shadow: 0px 0px 6px black;
+transition: 0.3s ease-in-out;
+}
+.choice:hover img{
+scale: 1.1;
+transition: 0.3s ease-in-out;
+} 
+.choice{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+transition: 0.3s ease-in;
+overflow: hidden;
+}
+
+ img{
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+@media(max-width:670px){
+    img{
+        height: 120px;
+    width: 120px;
+    }
+    .choice{
+    height: 120px;
+    width: 120px;
+    
+    }
+    .choices{
+        gap: 9px;
+    }
+}
+@media(max-width:170px){
+    img{
+        height: 70px;
+    width: 70px;
+    }
+    .choice{
+    height: 70px;
+    width: 70px;
+    
+    }
+}
+
+/* this is a score part of game */
+
+.score{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 30px;
+    margin-top: 70px;
+}
+#score-user, #score-comp{
+    font-size: 40px;
+}
+@media(max-width:170px){
+    .score{
+      font-size: 15px;
+    }
+    #score-user, #score-comp{
+    font-size: 15px;
+}
+}
+
+/* this is a message box here will display you result */
+.msg{
+    margin-top: 50px;
+}
+#msg{
+    background-color:#258276;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    display: inline;
+}
+@media(max-width:670px){
+    #msg{
+        font-size:17px ;
+    }
+}
+@media(max-width:190px){
+    #msg{
+        font-size:10px ;
+    }
+}
+@media(max-width:170px){
+     #msg{
+        font-size:5px ;
+    }
+}
