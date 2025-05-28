@@ -9,14 +9,14 @@ const compchoose = ()=>{
     let indx = Math.floor(Math.random()*3);
     return option[indx];
 }
-const showinner = (winner)=>{
+const showinner = (winner ,userchoice, compchoice)=>{
 if(winner){
- msg.innerText = "congratulation you have WON"; 
+ msg.innerText = `congratulation your ${userchoice} beats ${compchoice}`; 
   msg.style.backgroundColor = "green"; 
  userScore.innerText = ++usersc;
    console.log("winner");
 } else{
-     msg.innerText = "sorry! you have lose";
+     msg.innerText = `sorry! comp ${compchoice} bets ${userchoice} `;
       msg.style.backgroundColor = "red";
  compScore.innerText = ++compsc;
    console.log("lose");
@@ -42,7 +42,7 @@ if(userchoice === compchoice){
     } else {
  winner = compchoice == "rock" ? false : true;
     }
-    showinner(winner);
+    showinner(winner,userchoice,compchoice);
 }
 }
 choices.forEach((choice)=>{
