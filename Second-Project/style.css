@@ -27,6 +27,26 @@ h1{
       font-size: 8px;
     }
 }
+/* congratulation image with button */
+.winmsg {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.winmsg img{
+    width: 500px;
+    height: 300px;
+    border-radius: 0%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+z-index: 2;
+position: absolute;
+top: 40px;
+left: 30%;
+}
+
 /* this is a choice part thare are three opition with three image */
 .choices{
     display: flex;
@@ -62,6 +82,8 @@ overflow: hidden;
     object-fit: cover;
     border-radius: 50%;
     transition: 0.3s;
+    z-index: 1;
+
 }
 
 @media(max-width:670px){
