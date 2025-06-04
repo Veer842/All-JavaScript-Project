@@ -1,0 +1,123 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(6, 7, 3);
+}
+.container{
+    background-color: #a2d2ff;
+    color: white;
+    width: 70vh;
+    text-align: center;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+/* search box here */
+.search{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+.search input{
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 40px;
+    height: 60px;
+ padding-left: 22px;
+    font-size: 20px;
+    margin-left: 10px;
+    width: 370px;
+}
+.search button{
+margin-right: 20px;
+border: none;
+outline: none;
+border-radius: 50%;
+width: 57px;
+height: 57px;
+}
+.search button:hover{
+    cursor: pointer;
+}
+.search button img{
+    width: 20px;
+    margin-top: 5px;
+    transition: 0.3s ease-in;
+}
+.search button img:hover{
+    transition: 0.3s ease-in-out;
+    width: 23px;
+    object-fit: cover;
+}
+/* display to weather cloud in display section */
+.weather{
+    display: none;
+}
+.display{
+    text-align: center;
+}
+.display img{
+    width: 170px;
+    margin-bottom: 20px;
+}
+.display h1{
+font-size: 70px;
+}
+.display h2{
+font-size: 40px;
+font-weight: 540;
+margin-top: 20px;
+}
+
+/* weather report in report section */
+.report{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.humidity{
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.humidity img{
+    width: 60px;
+}
+.result{
+    margin-left: 12px;
+    text-align: left;
+}
+.result h3{
+    font-size: 35px;
+}
+.result p{
+    font-size: 21px;
+}
+
+.wind{
+margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.wind img{
+    width: 60px;
+}
