@@ -1,0 +1,79 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: #3a5a40;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    margin: 100px auto 20px;
+    background-color: #a3b18a;
+    color: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.container h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.container h2 span{
+    color: #6d597a;
+    border-bottom: 4px solid #6d597a;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+/* passwordbox with input and copy symbol */
+.passwordbox{
+    background-color: aliceblue;
+    color: black;
+    width: auto;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+.passwordbox input{
+    border: none;
+    outline: none;
+    font-size: 22px;
+    background-color: aliceblue;
+}
+.passwordbox img{
+    width: 20px; 
+    cursor: pointer;
+    transition: all 0.1s;
+}
+.passwordbox img:hover{
+width: 21px;
+object-fit: cover;
+}
+
+/* button onclick generate random new password */
+.container button{
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #6d597a;
+    color: rgb(240, 234, 227);
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 600;
+    padding-right: 12px;
+}
+.container button img{
+    width: 34px;
+    padding: 0px 10px 0px;
+}
